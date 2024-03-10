@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeria de Imagens Responsiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Galeria de Imagens Responsiva</h1>
+    <div class="gallery">
+        <img class="thumbnail" src="img/city1.jpg" alt="Imagem 1" onclick="openModal('city1.jpg')">
+        <img class="thumbnail" src="img/city2.jpg" alt="Imagem 2" onclick="openModal('city2.jpg')">
+        <!-- Adicione mais miniaturas de imagens aqui -->
+    </div>
+
+    <!-- O modal de imagem será exibido aqui -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
